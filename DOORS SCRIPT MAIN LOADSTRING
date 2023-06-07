@@ -1,0 +1,132 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KD OFFICIAL DOORS", "Ocean")
+
+
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+    MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+    end)
+
+    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+
+    --Other
+    local Other = Window:NewTab("Other")
+    local OtherSection = Other:NewSection("Other")
+
+    OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
+    end)
+
+local Tab = Window:NewTab("MORE SCRIPTS")
+local Section = Tab:NewSection("we are devs")
+
+Section:NewButton("ANTI-AFK", "Even when you switch to another window, you will appear to be active.", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/anti-afk%20via%20autofocus.txt"))()
+end)
+
+Section:NewButton("INVINSIBLE PLAYER", "Makes your character's baseparts fully transparent.", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Invisible%20Character.txt"))()
+end)
+
+Section:NewButton("FLOAT", "Makes your player's character float in the air.", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Float%20Character.txt"))()
+end)
+
+local Tab = Window:NewTab("DOORS SCRIPTS")
+local Section = Tab:NewSection("ALL DOORS SCRIPTS")
+
+Section:NewButton("VYNXIUS DOORS ", "this is a vynixius doors script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
+Section:NewButton("KING HUB", "MADE BY KING HUB", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))() 
+end)
+
+Section:NewButton("POOP DOORS HUB", "MADE BY POOP DOORS HUB", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))() 
+end)
+
+Section:NewButton("MS DOORS (BEST DOORS SCRIPT)", "THE BEST DOORS SCRIPT (MADE BY MS HUB)", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/Moonsec.lua"),true))()
+end)
+
+Section:NewButton("NUKE VS CITY SCRIPT", "MADE BY NUKEVSCITY ", function()
+   
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader", true))()
+end)
+
+Section:NewButton("BLACK KING", "MADE BY BLACK KING", function()
+    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKingMb"))()
+end)
+
+Section:NewButton("SHADOW HUB", "MADE BY SHADOW HUB", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowScripts4Roblox/PROTECTEDLUA/main/Scripts/DOORS/Loader52.lua'))()
+end)
+
+
+Section:NewButton("OMINOUS VIBES", "MADE BY OMNOUS VIBES", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/loadstring.lua"))()
+end)
+
+Section:NewButton("ENTITY SPAWNER", "MADE BY PLAMEN", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+
+end)
+
+Section:NewButton("PROJECT WD", "MADE BY PROJECT WD", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RiseValco/keybypasses/main/projectwd.lua"))()
+end)
+
+
+local Tab = Window:NewTab("CREDITS")
+local Section = Tab:NewSection("MAIN CREDITS")
+
+Section:NewLabel("1F0 (FOR THE SCRIPTS)")
+
+Section:NewLabel("FURKY (FOR THE SCRIPTS)")
+
+Section:NewLabel("NUKE VS CITY (FOR THE SCRIPTS)")
